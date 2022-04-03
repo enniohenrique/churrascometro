@@ -1,12 +1,31 @@
 .container {
-    background-color: yellowgreen;
-    width: 300px;
-    height: 300px;
+    background-color: #941B0C;
+    width: 400px;
+    height: 450px;
     top: 50%;
     left: 50%;
     position: absolute;
     justify-content: center;
     transform: translate(-50%, -50%);
-
-    
 }
+
+.titulo {
+    text-transform: uppercase;
+    background-color: #000;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.texto {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.num_pessoas {
+    text-align: center;
+    margin-top: 10px;
+}
+

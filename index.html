@@ -8,14 +8,51 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
+    <script>
+        addEventListener('load',inicio,false);
+      
+        function inicio()
+        {
+          document.getElementById('temperatura').addEventListener('change',cambioTemperatura,false);
+        }
+      
+        function cambioTemperatura()
+        {    
+          document.getElementById('temp').innerHTML=document.getElementById('temperatura').value;
+        }
+      </script>  
 </head>
+
 <body>
     
     <div class="container">
-        <p>teste</p>
-        <div>
-            tstand
+        <div class="titulo">
+            <h1>churrascometro</h1>
         </div>
+
+        <div class="texto">
+            <p>Quantas pessoas</p>
+        </div>
+
+        <!--<div class="pessoas">
+        <select name="num_pessoas" id="num_pessoas">
+
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+
+        </select>
+    </div>-->
+
+<div class="num_pessoas">
+    <input type="range" id="temperatura" min="0" max="100">
+    <span id="temp"></span>    
+</div>            
+
+
     </div>
 
 
